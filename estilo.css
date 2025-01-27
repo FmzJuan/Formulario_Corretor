@@ -1,0 +1,117 @@
+/* Centraliza o conteúdo da página */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    background-color: #fafafa;
+}
+
+/* Centraliza o título */
+h1 {
+    text-align: center;
+    font-family: 'Georgia', serif; /* Fonte diferente */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0);
+}
+
+/* Inputs em linha (CPF e Creci) */
+#cpf,
+#creci {
+    width: 120px;
+    height: 25px;
+    text-align: center;
+}
+
+/* Remove as setas dos inputs tipo number */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Input Nome */
+#name {
+    width: calc(100% - 7px);
+    max-width: 265px;
+    height: 25px;
+    text-align: center;
+}
+
+/* Organiza CPF e CRECI lado a lado */
+form div {
+    display: flex;
+    gap: 1px;
+}
+
+/* Botão */
+#enviar {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+#cancel-button{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+#enviar:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    #cpf,
+    #creci {
+        width: 100px;
+    }
+    form div {
+        flex-direction: column;
+    }
+    #enviar {
+        width: 100%;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
