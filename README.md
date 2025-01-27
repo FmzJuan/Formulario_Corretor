@@ -40,7 +40,7 @@ Os dados são exibidos em uma tabela dinâmica, onde é possível editar ou excl
 
 🎯 Como Executar o Projeto
 Clone este repositório:
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+git clone [https://github.com/FmzJuan/Formulario_Corretor]
 Configure o banco de dados MySQL:
 
 Importe o arquivo database.sql (fornecido no repositório).
